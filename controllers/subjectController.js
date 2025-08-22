@@ -12,7 +12,7 @@ function error(req, error, message, statusCode) {
 
 module.exports = {
     list: function (req, res) {
-        res.json(service.getSubjects());
+        res.json(service.getAllSubjects());
     },
     get: function (req, res) {
         if(req.params.id.trim() === "") {
